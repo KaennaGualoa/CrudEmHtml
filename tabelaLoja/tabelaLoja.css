@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*border: solid 2px red;*/
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+nav {
+    border: solid 2px #cccccc;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    /*border-radius: 1.25rem;*/
+}
+
+.logo {
+    width: 150px; /* Ajuste o tamanho da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    position: fixed; /* Mantém a logo fixa na página */
+    top: 20px; /* Ajusta a distância do topo */
+    left: 20px; /* Ajusta a distância da esquerda */
+}
+
+.menu {
+    position: fixed; /* Fixa o menu na lateral da tela, mesmo ao rolar a página */
+    top: 0; /* Alinha o menu ao topo */
+    left: 0; /* Posiciona o menu à esquerda */
+    width: 200px; /* Define a largura do menu */
+    height: 100%; /* O menu ocupará a altura total da página */
+    background-color: #F6DDD9; /* Cor de fundo do menu */
+    color: white; /* Cor do texto no menu */
+    padding: 20px; /* Espaçamento interno do menu */
+}
+
+.menu ul li {
+    margin: 0; padding: 0px;
+    border-bottom: 1px solid #CCC;
+    text-align: left;
+    list-style-type: none;
+    }
+
+ul li  { 
+    display: block;
+    text-align: center;
+    padding:  10px;
+    text-decoration: none;
+    border-bottom-style: solid;
+    border-bottom-color: #0080FF;
+    border-bottom-width: 5px;
+    /*float: left;*/
+    
+}
+
+ul li:hover {
+    background-color: #6d595f;
+    color: white;
+}
+
+
+h1 {
+    font-family: 'Reboto';
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-top: 4.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+main {
+    width: 100%;
+    background-color: #fafbff;
+    border-radius: 1.25rem;
+    border: solid 1px #cccccc;
+    overflow: hidden;
+}
+
+#cabecote-tabela {
+    border-bottom: #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+}
+
+.grupo-input{
+    border:  1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding-inline: 0.5rem;
+    background-color: #fafbff;
+}
+
+input {
+    height: 2rem;
+    border: none;
+    outline: 0;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: inherit;
+}
+
+button {
+    height: 1rem;
+    background-color: inherit;
+    border: none;
+    border-radius: 0.25rem;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.botao-primario {
+    background-color: #2563EB;
+    color: #fafbff;
+    height: 1.75rem;
+}
+
+.icone-svg {
+    width: 100%;
+    height: 100%;
+}
+
+#div-tabela{
+    overflow: hidden;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+    /*background-color: rgba(0, 255, 0, 0.45);*/
+}
+
+table {
+    width: 100%;
+    color: #282828;
+    border-collapse: collapse;
+
+}
+
+th {
+    font-family: 'Roboto';
+    font-weight: 600;
+    border-left: solid 1px #cccccc;
+    padding-inline: 0.5rem;
+}
+
+th:first-child {
+    border: none;
+}
+
+tr {
+    border-bottom: solid 1px #cccccc;
+}
+
+tbody tr:nth-child(even) {  /*odd*/
+    background-color: #ADAFB6;
+}
+
+
+tbody > tr:hover {
+    background-color: #dddddd;
+}
+
+tbody tr:last-child {
+    border: none;
+}
+
+td {
+    font-family: 'Noto Sans';
+    font-weight: 300;
+    font-size: 0.875rem;
+    border-left: solid 1px #cccccc;
+    padding-inline: 0.5rem;
+    padding-block: 0.25rem;
+}
+
+td:first-child {
+    border: none;
+
+}
+
+td > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.botao-editar {
+    color: #F59E0B;
+}
+
+.botao-remover {
+    color: #DC2626;
+}
